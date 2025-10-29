@@ -70,17 +70,24 @@ rwh_05 = { package = "raw-window-handle", version = "0.5.2", features = [
 ] }
 rwh_06 = { package = "raw-window-handle", version = "0.6", features = ["std"] }
 
-iced = { git = "https://github.com/iced-rs/iced.git", default-features = false }
-iced_runtime = { git = "https://github.com/iced-rs/iced.git" }
+iced = { version = "0.14.0-dev", features = [
+	"advanced",
+	"tokio",
+	"canvas",
+	"image",
+	"svg",
+], git = "https://github.com/iced-rs/iced", rev="bfc27e4691875840010e3d1e282b8e26b821c569" }
+
+iced_runtime = { git = "https://github.com/iced-rs/iced.git", rev="bfc27e4691875840010e3d1e282b8e26b821c569"  }
 #iced_style = "0.13"
-iced_core = { git = "https://github.com/iced-rs/iced.git" }
-iced_program = { git = "https://github.com/iced-rs/iced.git" }
-iced_renderer = { git = "https://github.com/iced-rs/iced.git" }
-iced_futures = { git = "https://github.com/iced-rs/iced.git" }
-iced_graphics = { git = "https://github.com/iced-rs/iced.git" }
-iced_debug = { git = "https://github.com/iced-rs/iced.git" }
-iced_devtools = { git = "https://github.com/iced-rs/iced.git" }
-iced_widget = { git = "https://github.com/iced-rs/iced.git" }
+iced_core = { git = "https://github.com/iced-rs/iced.git" ,rev="bfc27e4691875840010e3d1e282b8e26b821c569" }
+iced_program = { git = "https://github.com/iced-rs/iced.git" ,rev="bfc27e4691875840010e3d1e282b8e26b821c569" }
+iced_renderer = { git = "https://github.com/iced-rs/iced.git" ,rev="bfc27e4691875840010e3d1e282b8e26b821c569" }
+iced_futures = { git = "https://github.com/iced-rs/iced.git", rev="bfc27e4691875840010e3d1e282b8e26b821c569" }
+iced_graphics = { git = "https://github.com/iced-rs/iced.git", rev="bfc27e4691875840010e3d1e282b8e26b821c569" }
+iced_debug = { git = "https://github.com/iced-rs/iced.git", rev="bfc27e4691875840010e3d1e282b8e26b821c569" }
+iced_devtools = { git = "https://github.com/iced-rs/iced.git", rev="bfc27e4691875840010e3d1e282b8e26b821c569" }
+iced_widget = { git = "https://github.com/iced-rs/iced.git", rev="bfc27e4691875840010e3d1e282b8e26b821c569" }
 window_clipboard = "0.4.1"
 
 bitflags = "2.9.0"
